@@ -1,0 +1,16 @@
+{
+  "conventionalCommits.scopes": [
+    "repo",
+    "screens",
+    "navigation",
+    "assets",
+    "components",
+    "constants",
+    "stores",
+    "App.tsx"
+  ],
+  "cSpell.words": [
+    "fromthe",
+    "Leaderboard"
+  ]
+}

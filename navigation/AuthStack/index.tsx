@@ -13,7 +13,6 @@ export function AuthStack() {
     >
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="OTP" component={OTP} />
-      <Stack.Screen name="Success" component={Success} />
     </Stack.Navigator>
   );
 }

@@ -1,8 +1,9 @@
 import { NavigationContext } from "@react-navigation/native";
-import { NavigationScreenProps } from "react-navigation";
+import { NavigationScreenProp} from 'react-navigation';
 import React, { Component, createRef } from "react";
 import { Keyboard, Text, TextInput, View } from "react-native";
 import { TouchableWithoutFeedback } from "react-native-gesture-handler";
+import { exp } from "react-native-reanimated";
 import {
   AuthLayout,
   BlueLink,
@@ -19,6 +20,8 @@ const noOfInputs = noOfInputsArr.length;
 interface Props {
   navigation: any
 }
+
+
 
 export class OTP extends Component {
 
@@ -114,7 +117,6 @@ export class OTP extends Component {
     }
 
     this.setState({ errorString: "", isError: false, isLoading: true });
-    this.props.navigation.navigate('nextScreen')
 
     setTimeout(() => {
       this.setState({ isLoading: false });
